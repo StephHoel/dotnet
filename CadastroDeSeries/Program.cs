@@ -8,7 +8,7 @@ namespace CadastroDeSeries
         {
             Serie meuObjeto = new Serie();
 
-            
+            Console
 
             Console.WriteLine("Hello World!");
         }
