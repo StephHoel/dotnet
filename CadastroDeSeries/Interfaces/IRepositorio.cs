@@ -12,7 +12,7 @@ namespace CadastroDeSeries.Interfaces
 
          void Exclui(int id);
 
-         voud Atualiza(int id, T entidade);
+         void Atualiza(int id, T entidade);
 
          int ProximoId();
     }

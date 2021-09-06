@@ -1,3 +1,5 @@
+using System;
+
 namespace CadastroDeSeries
 {
     public class Serie : EntidadeBase
@@ -24,11 +26,13 @@ namespace CadastroDeSeries
 
         public override string ToString()
         {
+            // Environment.NewLine https://docs.microsoft.com/en-us/dotnet/api/system.environment.newline?view=netcore-3.1
             string retorno = "";
             retorno += "Gênero: " + this.Genero + Environment.NewLine;
             retorno += "TíTulo: " + this.Titulo + Environment.NewLine;
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
-            retorno += "Ano de Início: " + this.Ano;
+            retorno += "Ano de Início: " + this.Ano + Environment.NewLine;
+            retorno += "Excluído: " + this.Excluido;
             return retorno;
         }
 
@@ -41,6 +45,11 @@ namespace CadastroDeSeries
         {
             return this.Id;
         }
+        
+        public bool retornaExcluido()
+		{
+			return this.Excluido;
+		}
 
         public void Excluir()
         {
