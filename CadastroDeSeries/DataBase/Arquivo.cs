@@ -6,21 +6,17 @@ namespace CadastroDeSeries
 {
     public class Arquivo
     {
-        
         protected internal static string path = "DataBase/sample.db";
         
-        protected internal static void Ler(int? id)
+        protected internal static void ListarTudo()
         {
+            Console.WriteLine("**Lista de Séries Cadastradas**");
             try
             {
                 string[] readText = File.ReadAllLines(path);
                 
                 if(readText.Length != 0)
                 {
-                    // achar linha
-                    // chamar alterar()
-                    // escrever nova string com as novas informações na mesma linha
-
                     foreach (string line in readText)
                     {
                         var lineSplit = line.Split('|');
@@ -31,19 +27,76 @@ namespace CadastroDeSeries
             }
             catch(Exception e)
             {
-                Console.WriteLine("Exception: " + e.Message);
+                Console.WriteLine("Erro: " + e.Message);
             }
-            
+        }
+
+        protected internal static void ListarNaoExcluida()
+        {
+            Console.WriteLine("**Lista de Séries Cadastradas**");
+            try
+            {
+                string[] readText = File.ReadAllLines(path);
+                
+                if(readText.Length != 0)
+                {
+                    bool vazio = false;
+                    foreach (string line in readText)
+                    {
+                        var lineSplit = line.Split('|');
+                        if(!bool.Parse(lineSplit[5]))
+                        {
+                            Console.WriteLine("#ID {0}: - {1}", lineSplit[0], lineSplit[1]);
+                            vazio = false;
+                        }
+                        else vazio = true;
+                    }
+                    if(vazio) Console.WriteLine("Nenhuma série cadastrada");
+                }
+                else Console.WriteLine("Nenhuma série cadastrada");
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Erro: " + e.Message);
+            }
+        }
+        
+        protected internal static void ListarExcluida()
+        {
+            Console.WriteLine("**Lista de Séries Cadastradas**");
+            try
+            {
+                string[] readText = File.ReadAllLines(path);
+                
+                if(readText.Length != 0)
+                {
+                    bool vazio = true;
+                    foreach (string line in readText)
+                    {
+                        var lineSplit = line.Split('|');
+                        if(bool.Parse(lineSplit[5]))
+                        {
+                            Console.WriteLine("#ID {0}: - {1}", lineSplit[0], lineSplit[1]);
+                            vazio = true;
+                        }
+                        else vazio = false;
+                    }
+                    if(!vazio) Console.WriteLine("Nenhuma série cadastrada");
+                }
+                else Console.WriteLine("Nenhuma série cadastrada");
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Erro: " + e.Message);
+            }
         }
 
         protected internal static void Escrever(string texto)
         {
             try
             {
-                // This text is added only once to the file.
                 if (!File.Exists(path))
                 {
-                    // Create a file to write to.
                     using (StreamWriter sw = File.CreateText(path))
                     {
                         sw.WriteLine(texto);
@@ -51,8 +104,6 @@ namespace CadastroDeSeries
                 }
                 else
                 {
-                    // This text is always added, making the file longer over time
-                    // if it is not deleted.
                     using (StreamWriter sw = File.AppendText(path))
                     {
                         sw.WriteLine(texto);
@@ -61,43 +112,29 @@ namespace CadastroDeSeries
             }
             catch(Exception e)
             {
-                Console.WriteLine("Exception: " + e.Message);
+                Console.WriteLine("Erro: " + e.Message);
             }
         }
 
-        protected internal static void Alterar(int id, string novoTexto)
+        protected internal static void Alterar(string[] novoTexto)
         {
-            // TODO: alterar a linha número id
-
-            // try
-            // {
-            //     string[] readText = File.ReadAllLines(path);
-                
-            //     if(readText.Length != 0)
-                // {
-                    
-                    // achar linha
-            //         // escrever nova string com as novas informações na mesma linha
-
-            //         
-            //     }
-            //     else Console.WriteLine("Nenhuma série cadastrada");
-            // }
-            // catch(Exception e)
-            // {
-            //     Console.WriteLine("Exception: " + e.Message);
-            // }
-
-            // var arquivo = 
-            // var appSettings = ConfigurationManager.AppSettings;  
-            // string result = appSettings["key"] ?? "Not Found";  
-
-            Console.WriteLine("entrei");
-            // var linhas = File.ReadAllLines(arquivo);
-
-            // arquivo[id] = novoTexto; // Editar linha do id
-
-            // File.WriteAllLines(arquivo, linhas);
+            try
+            {
+                if (File.Exists(path))
+				{
+					using (StreamWriter sw = File.CreateText(path))
+					{
+						foreach (string line in novoTexto)
+						{
+							sw.WriteLine(line);
+						}
+					}
+				}
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine("Erro: " + e.Message);
+            }
         }
 
         protected internal static int ProximoId()

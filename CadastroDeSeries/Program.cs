@@ -1,45 +1,44 @@
 ﻿using System;
 using System.IO;
 using System.Configuration;
-using CadastroDeSeries;
 
 namespace CadastroDeSeries
 {
-    class Program
-    {
-        static SerieRepositorio repositorio = new SerieRepositorio();
-        static void Main(string[] args)
-        {
+   class Program
+   {
+		static SerieRepositorio repositorio = new SerieRepositorio();
+		
+		static void Main(string[] args)
+		{
+			Console.Clear();
+			Console.WriteLine(Environment.NewLine + "Bem vindx ao Cadastro de Séries!");
 
-			// ** Teste de Leitura de Arquivo **
-			// Arquivo.Ler();
-			// Arquivo.Escrever("Teste 1");
-			// Arquivo.Ler();
+			string opcao = MenuPrincipal();
 
-			// ** Begin **
-			Menu.BoasVindas();
-
-            string opcaoUsuario = Menu.MenuPrincipal();
-
-			while (opcaoUsuario.ToUpper() != "X")
+			while (opcao.ToUpper() != "X")
 			{
-				switch (opcaoUsuario)
+				switch (opcao)
 				{
-					case "1":
-						// ListarSeries();
-						Arquivo.Ler();
+					case "1": // lista todas as séries
+						Arquivo.ListarTudo();
 						break;
-					case "2":
-						InserirSerie();
+					case "2": // lista apenas séries não excluídas
+						Arquivo.ListarNaoExcluida();
 						break;
-					case "3":
-						AtualizarSerie();
+					case "3": // lista apenas séries excluídas
+						Arquivo.ListarExcluida();
 						break;
 					case "4":
-						ExcluirSerie();
+						Principal.InserirSerie();
 						break;
 					case "5":
-						VisualizarSerie();
+						Principal.AtualizarSerie();
+						break;
+					case "6":
+						Principal.ExcluirSerie();
+						break;
+					case "7":
+						Principal.VisualizarSerie();
 						break;
 					case "C":
 						Console.Clear();
@@ -49,64 +48,31 @@ namespace CadastroDeSeries
 						throw new ArgumentOutOfRangeException();
 				}
 
-				opcaoUsuario = Menu.MenuPrincipal();
+				opcao = MenuPrincipal();
 			}
 
-			Menu.Adeus();
-        }
-
-        private static void ExcluirSerie()
-		{
-			Console.Write(Environment.NewLine + "Digite o id da série: ");
-			int indiceSerie = int.Parse(Console.ReadLine());
-
-			repositorio.Exclui(indiceSerie);
+			Console.WriteLine(Environment.NewLine + "Obrigada por utilizar nossos serviços. Até a próxima!");
+			Console.WriteLine("Pressione ENTER para sair");
+			Console.ReadLine();
 		}
 
-        private static void VisualizarSerie()
+		private static string MenuPrincipal()
 		{
-			Console.Write(Environment.NewLine + "Digite o id da série: ");
-			int indiceSerie = int.Parse(Console.ReadLine());
+			Console.WriteLine(Environment.NewLine + "**Menu Principal**");
+			Console.WriteLine("1- Listar todas as séries");
+			Console.WriteLine("2- Listar apenas séries não excluídas");
+			Console.WriteLine("3- Listar apenas séries excluídas");
+			Console.WriteLine("4- Inserir nova série");
+			Console.WriteLine("5- Atualizar série");
+			Console.WriteLine("6- Excluir série");
+			Console.WriteLine("7- Visualizar série");
+			Console.WriteLine("C- Limpar Tela");
+			Console.WriteLine("X- Sair");
 
-			var serie = repositorio.RetornaPorId(indiceSerie);
-
-			Console.WriteLine(serie);
+			Console.Write(Environment.NewLine + "Informe a opção desejada: ");
+			string opcao = Console.ReadLine().ToUpper();
+			Console.WriteLine();
+			return opcao;
 		}
-
-        private static void AtualizarSerie()
-		{
-			Console.WriteLine(Environment.NewLine + "**Atualizar Série**");
-		
-			Console.Write(Environment.NewLine + "Digite o id da série: ");
-			int indiceSerie = int.Parse(Console.ReadLine());
-			
-			Menu.InsereAltera(indiceSerie);
-		}
-        private static void ListarSeries()
-		{
-			Console.WriteLine(Environment.NewLine + "**Lista de séries**");
-
-			var lista = repositorio.Lista();
-
-			if (lista.Count == 0)
-			{
-				Console.WriteLine("Nenhuma série cadastrada");
-				return;
-			}
-
-			foreach (var serie in lista)
-			{
-                var excluido = serie.retornaExcluido();
-                
-				Console.WriteLine("#ID {0}: - {1} {2}", serie.retornaId(), serie.retornaTitulo(), (excluido ? " *Excluído*" : ""));
-			}
-		}
-
-        private static void InserirSerie()
-		{
-			Console.WriteLine(Environment.NewLine + "**Inserir Nova Série**");
-			
-			Menu.InsereAltera();
-		}
-    }
+   }
 }
