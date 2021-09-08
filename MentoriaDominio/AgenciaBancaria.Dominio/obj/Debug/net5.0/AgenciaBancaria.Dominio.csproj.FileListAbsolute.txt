@@ -1,0 +1,12 @@
+c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.csproj.AssemblyReference.cache
+c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.AssemblyInfoInputs.cache
+c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.AssemblyInfo.cs
+c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.csproj.CoreCompileInputs.cache
+c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\AgenciaBancaria.Dominio\bin\Debug\net5.0\AgenciaBancaria.Dominio.deps.json
+c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\AgenciaBancaria.Dominio\bin\Debug\net5.0\AgenciaBancaria.Dominio.dll
+c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\AgenciaBancaria.Dominio\bin\Debug\net5.0\ref\AgenciaBancaria.Dominio.dll
+c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\AgenciaBancaria.Dominio\bin\Debug\net5.0\AgenciaBancaria.Dominio.pdb
+c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.dll
+c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\ref\AgenciaBancaria.Dominio.dll
+c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.pdb
