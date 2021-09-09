@@ -1,0 +1,11 @@
+{
+   "diffEditor.codeLens": true,
+   "editor.codeLensFontFamily": "Consolas, 'Courier New', monospace",
+   "javascript.referencesCodeLens.enabled": true,
+   "javascript.referencesCodeLens.showOnAllFunctions": true,
+   "typescript.implementationsCodeLens.enabled": true,
+   "typescript.referencesCodeLens.enabled": true,
+   "typescript.referencesCodeLens.showOnAllFunctions": true,
+   "files.autoSave": "afterDelay",
+   "references.preferredLocation": "view"
+}

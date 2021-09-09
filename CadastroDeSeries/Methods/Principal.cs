@@ -8,21 +8,23 @@ namespace CadastroDeSeries
     {
       protected internal static void InserirSerie()
 		{
-			Console.WriteLine("**Inserir Nova Série**");
+			Console.WriteLine("**Inserir Nova Produção Audiovisual**");
 
 			var titulo = Input.Titulo();
 			var genero = Input.Genero();
 			var ano    = Input.Ano();
 			var desc   = Input.Descricao();
+			var tipo   = Input.Tipo();
+			var status = Input.Status();
 
-			string obj = $"{Arquivo.ProximoId()}|{titulo}|{(Genero)genero}|{ano}|{desc}|false";
+			string obj = $"{Arquivo.ProximoId()}|{titulo}|{(Genero)genero}|{ano}|false|{desc}|{(Tipo)tipo}|{(Status)status}";
 			Arquivo.Escrever(obj);
 		}
 
 		protected internal static void AtualizarSerie()
 		{
 			Console.WriteLine(Environment.NewLine + "**Atualizar Série**");
-		
+
 			int idSerie = Input.Id(); // informa qual serie será sendo editada
 			Console.WriteLine();
 
@@ -45,8 +47,8 @@ namespace CadastroDeSeries
 				var desc = Input.Descricao();
 
 				readText[idSerie] = $"{idSerie}|{titulo}|{(Genero)genero}|{ano}|{desc}|{linha[5]}";
-				
-				Arquivo.Alterar(readText);				
+
+				Arquivo.Alterar(readText);
 			}
 		}
 
@@ -62,8 +64,8 @@ namespace CadastroDeSeries
 				Console.WriteLine($"{Environment.NewLine}**Série excluída da lista: {linha[1]}**");
 
 				readText[idSerie] = $"{idSerie}|{linha[1]}|{linha[2]}|{linha[3]}|{linha[4]}|true";
-				
-				Arquivo.Alterar(readText);				
+
+				Arquivo.Alterar(readText);
 			}
 		}
 

@@ -24,6 +24,6 @@ namespace AgenciaBancaria.Dominio
         public string RG { get; private set; }
 
         public Endereco Endereco { get; private set; }
-        
+
     }
 }

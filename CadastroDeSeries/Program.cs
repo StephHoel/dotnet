@@ -7,7 +7,7 @@ namespace CadastroDeSeries
    class Program
    {
 		static SerieRepositorio repositorio = new SerieRepositorio();
-		
+
 		static void Main(string[] args)
 		{
 			Console.Clear();
@@ -73,6 +73,18 @@ namespace CadastroDeSeries
 			string opcao = Console.ReadLine().ToUpper();
 			Console.WriteLine();
 			return opcao;
+		}
+
+		private static string MenuLista()
+		{
+			Console.WriteLine(Environment.NewLine + "**Menu de Listas**");
+			Console.WriteLine("1- Listar todos os Filmes e Séries");
+			Console.WriteLine("2- Listar Filmes");
+			Console.WriteLine("3- Listar Séries");
+			Console.WriteLine("4- Listar todos Assistidos");
+			Console.WriteLine("5- Listar todos Quero Assistir");
+			Console.WriteLine("6- Voltar para o Menu Principal");
+			Console.WriteLine("X- Sair");
 		}
    }
 }

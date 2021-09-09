@@ -33,6 +33,7 @@ namespace AgenciaBancaria.App
                 conta.Sacar(10, senha);
 
                 Console.WriteLine("Saldo: " + conta.Saldo);
+                
             }
             catch (Exception e)
             {
