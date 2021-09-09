@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XcBYQuLXN3LT6aIEPcgjouQX4G53BOph+Hun90rIf3ZEblvRM6DYOlcadnj8Ka1niRQVcaFf/MiBW0wehUnw6w==",
+  "dgSpecHash": "kGATdDVY6+ULlJfqHYddCipj4YT0Y2Khee+u/CaET+yakfqZAH2uub9E0FDb/TlQLKgYmyt6bWHYbjuhVl0gIQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\exercicios-dotnet\\CadastroDeSeries\\CadastroDeSeries.csproj",
+  "projectFilePath": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\dotnet\\CadastroDeSeries\\CadastroDeSeries.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

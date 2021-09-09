@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\exercicios-dotnet\\CadastroDeSeries\\CadastroDeSeries.csproj",
+      "projectUniqueName": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\dotnet\\CadastroDeSeries\\CadastroDeSeries.csproj",
       "projectName": "CadastroDeSeries",
-      "projectPath": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\exercicios-dotnet\\CadastroDeSeries\\CadastroDeSeries.csproj",
+      "projectPath": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\dotnet\\CadastroDeSeries\\CadastroDeSeries.csproj",
       "packagesPath": "C:\\Users\\steph\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\exercicios-dotnet\\CadastroDeSeries\\obj\\",
+      "outputPath": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\dotnet\\CadastroDeSeries\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\steph\\AppData\\Roaming\\NuGet\\NuGet.Config"

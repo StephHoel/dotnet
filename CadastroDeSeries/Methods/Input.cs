@@ -16,37 +16,25 @@ namespace CadastroDeSeries
             }
 
             Console.Write(Environment.NewLine + "Digite o número do novo gênero: ");
-            // int entradaGenero = int.Parse(Console.ReadLine());
             return int.Parse(Console.ReadLine());
-
-            // return entradaGenero;
         }
 
         protected internal static string Titulo()
         {
             Console.Write("Informe o novo título: ");
-            // string entradaTitulo = Console.ReadLine();
             return Console.ReadLine();
-
-            // return entradaTitulo;
         }
 
         protected internal static int Ano()
         {
             Console.Write("Informe o novo ano de início (xxxx): ");
-            // int entradaAno = int.Parse(Console.ReadLine());
             return int.Parse(Console.ReadLine());
-
-            // return entradaAno;
         }
 
         protected internal static string Descricao()
         {
             Console.Write("Informe a nova descrição: ");
-            // string entradaDescricao = Console.ReadLine();
             return Console.ReadLine();
-
-            // return entradaDescricao;
         }
 
         protected internal static int Tipo()
@@ -78,7 +66,6 @@ namespace CadastroDeSeries
         protected internal static int Id()
         {
         	Console.Write("Digite o id da série: ");
-			// int indiceSerie = int.Parse(Console.ReadLine());
 			return int.Parse(Console.ReadLine());
         }
     }

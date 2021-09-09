@@ -7,27 +7,27 @@ namespace CadastroDeSeries
     public class Arquivo
     {
         protected internal static string path = "DataBase/sample.db";
-        
+
         protected internal static void ListarTudo()
         {
-            Console.WriteLine("**Lista de Séries Cadastradas**");
             try
             {
+                Output.Titulo("Lista de Séries Cadastradas");
                 string[] readText = File.ReadAllLines(path);
-                
+
                 if(readText.Length != 0)
                 {
                     foreach (string line in readText)
                     {
-                        var lineSplit = line.Split('|');
+                        var lineSplit = Output.Split(line);
                         Console.WriteLine("#ID {0}: - {1} {2}", lineSplit[0], lineSplit[1], (bool.Parse(lineSplit[5]) ? "*Excluído*" : ""));
                     }
                 }
-                else Console.WriteLine("Nenhuma série cadastrada");
+                else NenhumaSerie();
             }
             catch(Exception e)
             {
-                Console.WriteLine("Erro: " + e.Message);
+                Erro(e.Message);
             }
         }
 
@@ -37,7 +37,7 @@ namespace CadastroDeSeries
             try
             {
                 string[] readText = File.ReadAllLines(path);
-                
+
                 if(readText.Length != 0)
                 {
                     bool vazio = false;
@@ -51,23 +51,23 @@ namespace CadastroDeSeries
                         }
                         else vazio = true;
                     }
-                    if(vazio) Console.WriteLine("Nenhuma série cadastrada");
+                    if(vazio) NenhumaSerie();
                 }
-                else Console.WriteLine("Nenhuma série cadastrada");
+                else NenhumaSerie();
             }
             catch(Exception e)
             {
-                Console.WriteLine("Erro: " + e.Message);
+                Erro(e.Message);
             }
         }
-        
+
         protected internal static void ListarExcluida()
         {
             Console.WriteLine("**Lista de Séries Cadastradas**");
             try
             {
                 string[] readText = File.ReadAllLines(path);
-                
+
                 if(readText.Length != 0)
                 {
                     bool vazio = true;
@@ -81,13 +81,13 @@ namespace CadastroDeSeries
                         }
                         else vazio = false;
                     }
-                    if(!vazio) Console.WriteLine("Nenhuma série cadastrada");
+                    if(!vazio) NenhumaSerie();
                 }
-                else Console.WriteLine("Nenhuma série cadastrada");
+                else NenhumaSerie();
             }
             catch(Exception e)
             {
-                Console.WriteLine("Erro: " + e.Message);
+                Erro(e.Message);
             }
         }
 
@@ -100,7 +100,7 @@ namespace CadastroDeSeries
                     using (StreamWriter sw = File.CreateText(path))
                     {
                         sw.WriteLine(texto);
-                    }	
+                    }
                 }
                 else
                 {
@@ -112,7 +112,7 @@ namespace CadastroDeSeries
             }
             catch(Exception e)
             {
-                Console.WriteLine("Erro: " + e.Message);
+                Erro(e.Message);
             }
         }
 
@@ -133,7 +133,7 @@ namespace CadastroDeSeries
             }
             catch(Exception e)
             {
-                Console.WriteLine("Erro: " + e.Message);
+                Erro(e.Message);
             }
         }
 
@@ -141,6 +141,16 @@ namespace CadastroDeSeries
         {
             string[] readText = File.ReadAllLines(path);
             return readText.Length;
+        }
+
+        protected static void Erro(string erro)
+        {
+            Console.WriteLine("Erro: " + erro);
+        }
+
+        protected static void NenhumaSerie()
+        {
+            Console.WriteLine("Nenhuma série cadastrada");
         }
     }
 }
