@@ -1,3 +1,3 @@
-# exercicios-dotnet
+# Projetos de .Net
 #
-# Esta pasta estará repleta de exercícios feitos durante o aprendizado do .Net
+### Esta pasta está repleta de projetos feitos durante o aprendizado do .Net
