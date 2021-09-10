@@ -44,7 +44,6 @@ namespace CadastroDeSeries
 					case "C":
 						Console.Clear();
 						break;
-
 					default:
 						throw new ArgumentOutOfRangeException();
 				}
@@ -57,7 +56,5 @@ namespace CadastroDeSeries
 			Console.WriteLine("Pressione ENTER para sair");
 			Console.ReadLine();
 		}
-
-
    }
 }
