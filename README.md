@@ -1,3 +1,2 @@
 # Projetos de .Net
-#
-### Esta pasta está repleta de projetos feitos durante o aprendizado do .Net
+Esta pasta está repleta de projetos feitos com c# .Net
