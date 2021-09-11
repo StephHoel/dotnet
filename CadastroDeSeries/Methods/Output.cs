@@ -29,23 +29,10 @@ namespace CadastroDeSeries
 			Console.WriteLine("X- Sair");
 		}
 
-        protected internal static void MenuLista()
-		{
-         Console.WriteLine();
-			Console.WriteLine("**Menu de Listas**");
-			Console.WriteLine("1- Listar todos os Filmes e Séries");
-			Console.WriteLine("2- Listar Filmes");
-			Console.WriteLine("3- Listar Séries");
-			Console.WriteLine("4- Listar todos Assistidos");
-			Console.WriteLine("5- Listar todos Quero Assistir");
-			Console.WriteLine("6- Voltar para o Menu Principal");
-			Console.WriteLine("X- Sair");
-		}
-
         protected internal static string RetornoMenu()
         {
             Console.WriteLine();
-			Console.WriteLine("Informe a opção desejada: ");
+			Console.Write("Informe a opção desejada: ");
 			string opcao = Console.ReadLine().ToUpper();
 			Console.WriteLine();
 			return opcao;

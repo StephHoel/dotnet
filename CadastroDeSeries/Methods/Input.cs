@@ -37,32 +37,6 @@ namespace CadastroDeSeries
             return Console.ReadLine();
         }
 
-        protected internal static int Tipo()
-        {
-            Console.WriteLine();
-
-            foreach (int i in Enum.GetValues(typeof(Tipo)))
-            {
-                Console.WriteLine("{0}- {1}", i, Enum.GetName(typeof(Tipo), i));
-            }
-
-            Console.Write(Environment.NewLine + "Série ou Filme? ");
-            return int.Parse(Console.ReadLine());
-        }
-
-        protected internal static int Status()
-        {
-            Console.WriteLine();
-
-            foreach (int i in Enum.GetValues(typeof(Status)))
-            {
-                Console.WriteLine("{0}- {1}", i, Enum.GetName(typeof(Status), i));
-            }
-
-            Console.Write(Environment.NewLine + "Já assistiu ou Quer assistir? ");
-            return int.Parse(Console.ReadLine());
-        }
-
         protected internal static int Id()
         {
         	Console.Write("Digite o id da série: ");

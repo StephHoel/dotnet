@@ -12,7 +12,7 @@ namespace CadastroDeSeries
         {
             try
             {
-                Output.Titulo("Lista das Obras Audiovisuais");
+                Output.Titulo("Lista de Séries");
                 string[] readText = File.ReadAllLines(path);
 
                 if(readText.Length != 0)
@@ -63,7 +63,7 @@ namespace CadastroDeSeries
 
         protected internal static void ListarExcluida()
         {
-            Console.WriteLine("**Lista de Séries Cadastradas**");
+            Output.Titulo("Lista de Séries Excluídas");
             try
             {
                 string[] readText = File.ReadAllLines(path);

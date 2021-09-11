@@ -8,16 +8,14 @@ namespace CadastroDeSeries
     {
       protected internal static void InserirSerie()
 		{
-			Console.WriteLine("**Inserir Nova Produção Audiovisual**");
+			Console.WriteLine("**Inserir Nova Série**");
 
 			var titulo = Input.Titulo();
 			var genero = Input.Genero();
 			var ano    = Input.Ano();
 			var desc   = Input.Descricao();
-			var tipo   = Input.Tipo();
-			var status = Input.Status();
 
-			string obj = $"{Arquivo.ProximoId()}|{titulo}|{(Genero)genero}|{ano}|{desc}|false|{(Tipo)tipo}|{(Status)status}";
+			string obj = $"{Arquivo.ProximoId()}|{titulo}|{(Genero)genero}|{ano}|{desc}|false";
 			Arquivo.Escrever(obj);
 		}
 
