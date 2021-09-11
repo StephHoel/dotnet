@@ -16,7 +16,7 @@ namespace CadastroDeSeries
 
         protected internal static void MenuPrincipal()
 		{
-            Console.WriteLine();
+         Console.WriteLine();
 			Console.WriteLine("**Menu Principal**");
 			Console.WriteLine("1- Listar todas as séries");
 			Console.WriteLine("2- Listar apenas séries não excluídas");
@@ -31,7 +31,7 @@ namespace CadastroDeSeries
 
         protected internal static void MenuLista()
 		{
-            Console.WriteLine();
+         Console.WriteLine();
 			Console.WriteLine("**Menu de Listas**");
 			Console.WriteLine("1- Listar todos os Filmes e Séries");
 			Console.WriteLine("2- Listar Filmes");

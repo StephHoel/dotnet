@@ -17,7 +17,7 @@ namespace CadastroDeSeries
 			var tipo   = Input.Tipo();
 			var status = Input.Status();
 
-			string obj = $"{Arquivo.ProximoId()}|{titulo}|{(Genero)genero}|{ano}|false|{desc}|{(Tipo)tipo}|{(Status)status}";
+			string obj = $"{Arquivo.ProximoId()}|{titulo}|{(Genero)genero}|{ano}|{desc}|false|{(Tipo)tipo}|{(Status)status}";
 			Arquivo.Escrever(obj);
 		}
 

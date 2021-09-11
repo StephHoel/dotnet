@@ -49,7 +49,7 @@ namespace CadastroDeSeries
 				}
 
 				Output.MenuPrincipal();
-				string opcao = Output.RetornoMenu();
+				opcao = Output.RetornoMenu();
 			}
 
 			Console.WriteLine(Environment.NewLine + "Obrigada por utilizar nossos serviços. Até a próxima!");
