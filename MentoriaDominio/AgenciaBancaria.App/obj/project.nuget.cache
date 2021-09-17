@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "73cG8dldEwr0sRqvTJJBcMjm2jtmDaS+A1IXVBGpa4OSo/D49jw6xEI1kmesSCWPs65l8kvMQS4CtJPcPpfNEQ==",
+  "dgSpecHash": "76uFOZJd+AvLxyLCuRakxrmRV3ciU8JOD7mpva/CwV3IY5L6kfm7QrsrlW81xq7cAldbFyDPvUiGqoY3lDqfTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\exercicios-dotnet\\MentoriaDominio\\AgenciaBancaria.App\\AgenciaBancaria.App.csproj",
+  "projectFilePath": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\dotnet\\MentoriaDominio\\AgenciaBancaria.App\\AgenciaBancaria.App.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,16 +1,12 @@
 ﻿using System;
-using System.IO;
-using System.Configuration;
 
 namespace CadastroDeSeries
 {
    public class Program
    {
-		static SerieRepositorio repositorio = new SerieRepositorio();
-
-		static void Main(string[] args)
+		static void Main()
 		{
-			Console.Clear();
+         Console.Clear();
 			Console.WriteLine(Environment.NewLine + "Bem vindx ao Cadastro de Séries!");
 
 			Output.MenuPrincipal();

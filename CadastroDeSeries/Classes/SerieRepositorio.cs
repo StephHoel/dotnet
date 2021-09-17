@@ -1,13 +1,11 @@
-using System;
 using System.Collections.Generic;
-using CadastroDeSeries;
 using CadastroDeSeries.Interfaces;
 
 namespace CadastroDeSeries
 {
-    public class SerieRepositorio : IRepositorio<Serie>
+   public class SerieRepositorio : IRepositorio<Serie>
 	{
-        private List<Serie> listaSerie = new List<Serie>();
+        private readonly List<Serie> listaSerie = new();
 		public void Atualiza(int id, Serie objeto)
 		{
 			listaSerie[id] = objeto;
@@ -23,7 +21,7 @@ namespace CadastroDeSeries
 			listaSerie.Add(objeto);
 		}
 
-		public void Inserir(string objeto)
+		public static void Inserir(string objeto)
 		{
 			Arquivo.Escrever(objeto);
 		}

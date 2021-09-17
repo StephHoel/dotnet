@@ -1,12 +1,11 @@
 using System;
 using System.IO;
-using System.Configuration;
 
 namespace CadastroDeSeries
 {
-    public class Arquivo
+   public class Arquivo
     {
-        protected internal static string path = "DataBase/sample.db";
+        protected internal const string path = "DataBase/sample.db";
 
         protected internal static void ListarTudo()
         {
@@ -97,17 +96,13 @@ namespace CadastroDeSeries
             {
                 if (!File.Exists(path))
                 {
-                    using (StreamWriter sw = File.CreateText(path))
-                    {
-                        sw.WriteLine(texto);
-                    }
+                    using StreamWriter sw = File.CreateText(path);
+                    sw.WriteLine(texto);
                 }
                 else
                 {
-                    using (StreamWriter sw = File.AppendText(path))
-                    {
-                        sw.WriteLine(texto);
-                    }
+                    using StreamWriter sw = File.AppendText(path);
+                    sw.WriteLine(texto);
                 }
             }
             catch(Exception e)
@@ -122,14 +117,12 @@ namespace CadastroDeSeries
             {
                 if (File.Exists(path))
 				{
-					using (StreamWriter sw = File.CreateText(path))
-					{
-						foreach (string line in novoTexto)
-						{
-							sw.WriteLine(line);
-						}
-					}
-				}
+                    using StreamWriter sw = File.CreateText(path);
+                    foreach (string line in novoTexto)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
             }
             catch(Exception e)
             {

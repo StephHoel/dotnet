@@ -7,7 +7,7 @@ namespace AgenciaBancaria.Dominio
     {
         public ContaBancaria(Cliente cliente)
         {
-            Random random = new Random();
+            Random random = new();
             NumeroConta = random.Next(50000,100000);
             DigitoVerificador = random.Next(0,9);
 

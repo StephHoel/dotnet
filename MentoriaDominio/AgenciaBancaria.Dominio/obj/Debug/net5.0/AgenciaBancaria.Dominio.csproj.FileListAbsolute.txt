@@ -10,3 +10,15 @@ c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\Agen
 c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.dll
 c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\ref\AgenciaBancaria.Dominio.dll
 c:\Users\steph\OneDrive\Documentos\GitHub\exercicios-dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.pdb
+C:\Users\steph\OneDrive\Documentos\GitHub\dotnet\MentoriaDominio\AgenciaBancaria.Dominio\bin\Debug\net5.0\AgenciaBancaria.Dominio.deps.json
+C:\Users\steph\OneDrive\Documentos\GitHub\dotnet\MentoriaDominio\AgenciaBancaria.Dominio\bin\Debug\net5.0\AgenciaBancaria.Dominio.dll
+C:\Users\steph\OneDrive\Documentos\GitHub\dotnet\MentoriaDominio\AgenciaBancaria.Dominio\bin\Debug\net5.0\ref\AgenciaBancaria.Dominio.dll
+C:\Users\steph\OneDrive\Documentos\GitHub\dotnet\MentoriaDominio\AgenciaBancaria.Dominio\bin\Debug\net5.0\AgenciaBancaria.Dominio.pdb
+C:\Users\steph\OneDrive\Documentos\GitHub\dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.csproj.AssemblyReference.cache
+C:\Users\steph\OneDrive\Documentos\GitHub\dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\steph\OneDrive\Documentos\GitHub\dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.AssemblyInfoInputs.cache
+C:\Users\steph\OneDrive\Documentos\GitHub\dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.AssemblyInfo.cs
+C:\Users\steph\OneDrive\Documentos\GitHub\dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\steph\OneDrive\Documentos\GitHub\dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.dll
+C:\Users\steph\OneDrive\Documentos\GitHub\dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\ref\AgenciaBancaria.Dominio.dll
+C:\Users\steph\OneDrive\Documentos\GitHub\dotnet\MentoriaDominio\AgenciaBancaria.Dominio\obj\Debug\net5.0\AgenciaBancaria.Dominio.pdb

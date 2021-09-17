@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\exercicios-dotnet\\MentoriaDominio\\AgenciaBancaria.Dominio\\AgenciaBancaria.Dominio.csproj": {}
+    "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\dotnet\\MentoriaDominio\\AgenciaBancaria.Dominio\\AgenciaBancaria.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\exercicios-dotnet\\MentoriaDominio\\AgenciaBancaria.Dominio\\AgenciaBancaria.Dominio.csproj": {
+    "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\dotnet\\MentoriaDominio\\AgenciaBancaria.Dominio\\AgenciaBancaria.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\exercicios-dotnet\\MentoriaDominio\\AgenciaBancaria.Dominio\\AgenciaBancaria.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\dotnet\\MentoriaDominio\\AgenciaBancaria.Dominio\\AgenciaBancaria.Dominio.csproj",
         "projectName": "AgenciaBancaria.Dominio",
-        "projectPath": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\exercicios-dotnet\\MentoriaDominio\\AgenciaBancaria.Dominio\\AgenciaBancaria.Dominio.csproj",
+        "projectPath": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\dotnet\\MentoriaDominio\\AgenciaBancaria.Dominio\\AgenciaBancaria.Dominio.csproj",
         "packagesPath": "C:\\Users\\steph\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\exercicios-dotnet\\MentoriaDominio\\AgenciaBancaria.Dominio\\obj\\",
+        "outputPath": "C:\\Users\\steph\\OneDrive\\Documentos\\GitHub\\dotnet\\MentoriaDominio\\AgenciaBancaria.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\steph\\AppData\\Roaming\\NuGet\\NuGet.Config"
